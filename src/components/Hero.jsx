@@ -48,7 +48,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="space-y-4"
           >
-            <h1 className="text-4xl lg:text-6xl xl:text-7xl font-display font-bold">
+            <h1 className="text-4xl lg:text-6xl xl:text-5xl font-display font-bold">
               <span className="text-neutral-900 dark:text-white">Hello, I'm </span>
               <span className="text-gradient">Your Name</span>
             </h1>
@@ -57,7 +57,7 @@ const Hero = () => {
               Frontend Web Developer
             </h2>
             
-            <p className="text-lg lg:text-xl text-neutral-500 dark:text-neutral-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-md lg:text-md text-neutral-500 dark:text-neutral-500 max-w-2xl mx-auto leading-relaxed">
               Crafting elegant, user-friendly digital experiences with modern technologies. 
               Passionate about clean code, beautiful design, and exceptional user experiences.
             </p>

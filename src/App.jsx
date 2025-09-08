@@ -25,8 +25,10 @@ function App() {
   }, []);
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    if (!darkMode) {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    
+    if (newDarkMode) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     } else {
@@ -36,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-neutral-950 transition-colors duration-300">
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-neutral-950 text-white' : 'bg-white text-neutral-900'}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
       <motion.main

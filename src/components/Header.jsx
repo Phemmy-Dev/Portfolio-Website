@@ -52,7 +52,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
             className="font-display font-bold text-xl lg:text-2xl text-gradient cursor-pointer"
             onClick={() => scrollToSection('#home')}
           >
-            Portfolio
+            Oluwafemi.
           </motion.div>
 
           {/* Desktop Navigation */}
