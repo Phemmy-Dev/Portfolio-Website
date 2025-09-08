@@ -30,32 +30,32 @@ const Footer = () => {
   const socialLinks = [
     { 
       icon: Github, 
-      href: '#', 
+      href: 'https://github.com/Phemmy-Dev', 
       label: 'GitHub',
       hoverColor: 'hover:text-gray-900 dark:hover:text-gray-100'
     },
     { 
       icon: Linkedin, 
-      href: '#', 
+      href: 'https://www.linkedin.com/in/oluwafemi-akinruntan/', 
       label: 'LinkedIn',
       hoverColor: 'hover:text-blue-600'
     },
     { 
       icon: Twitter, 
-      href: '#', 
+      href: 'https://x.com/Phemmy_dev', 
       label: 'Twitter',
       hoverColor: 'hover:text-blue-400'
     },
     { 
       icon: Mail, 
-      href: 'mailto:hello@yourname.com', 
+      href: 'mailto:oluwafemiakinruntan1@gmail.com', 
       label: 'Email',
       hoverColor: 'hover:text-red-500'
     },
   ];
 
   const skills = [
-    'React', 'TypeScript', 'Next.js', 'Vue.js', 'Tailwind CSS', 'Node.js'
+    'React', 'TailwindCSS', 'Wordpress', 'Shopify', 'Git & Github'
   ];
 
   const scrollToSection = (href) => {
@@ -109,11 +109,10 @@ const Footer = () => {
                   className="text-2xl font-display font-bold text-gradient cursor-pointer"
                   onClick={() => scrollToSection('#home')}
                 >
-                  Your Portfolio
+                    Oluwafemi.
                 </motion.h3>
                 <p className="text-neutral-400 mt-4 leading-relaxed">
-                  Frontend Developer passionate about creating beautiful, functional, 
-                  and user-friendly web applications. Let's build something amazing together.
+                  I’m a Frontend Developer who enjoys turning ideas into sleek, functional, and user-friendly web applications. Think of me as the guy who makes websites not just work—but look good while doing it. Let’s create something that people won’t just use, but love.
                 </p>
               </div>
 
@@ -145,6 +144,7 @@ const Footer = () => {
                     <motion.a
                       key={social.label}
                       href={social.href}
+                      target="_blank"
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       className={`p-3 bg-neutral-800 hover:bg-neutral-700 rounded-lg transition-all duration-200 text-neutral-400 ${social.hoverColor} group`}
@@ -185,24 +185,24 @@ const Footer = () => {
                 <div>
                   <p className="text-sm">Email</p>
                   <a 
-                    href="mailto:hello@yourname.com"
+                    href="mailto:oluwafemiakinruntan1@gmail.com"
                     className="hover:text-white transition-colors duration-200"
                   >
-                    hello@yourname.com
+                    oluwafemiakinruntan1@gmail.com
                   </a>
                 </div>
                 <div>
                   <p className="text-sm">Phone</p>
                   <a 
-                    href="tel:+15551234567"
+                    href="tel:+234813057289"
                     className="hover:text-white transition-colors duration-200"
                   >
-                    +1 (555) 123-4567
+                    +234 813 057 289
                   </a>
                 </div>
                 <div>
                   <p className="text-sm">Location</p>
-                  <p>New York, NY</p>
+                  <p>Nigeria 🇳🇬</p>
                 </div>
               </div>
 
@@ -235,12 +235,9 @@ const Footer = () => {
                 variants={itemVariants}
                 className="flex items-center space-x-2 text-neutral-400 text-sm"
               >
-                <span>© {currentYear} Your Portfolio. Made with</span>
+                <span>© {currentYear} Oluwafemi Akinruntan. Made with</span>
                 <Heart size={16} className="text-red-500 fill-current animate-pulse" />
-                <span>using</span>
-                <Code size={16} className="text-primary-400" />
-                <span>and lots of</span>
-                <Coffee size={16} className="text-amber-500" />
+                <span>and some sleepless nights.</span>
               </motion.div>
 
               {/* Back to Top */}

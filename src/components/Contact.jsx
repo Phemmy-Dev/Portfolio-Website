@@ -26,33 +26,27 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@yourname.com',
-      href: 'mailto:hello@yourname.com',
+      value: 'oluwafemiakinruntan1@gmail.com',
+      href: 'mailto:oluwafemiakinruntan1@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+234 8130587289',
+      href: 'tel:+2348130587289',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'New York, NY',
-      href: '#',
-    },
-    {
-      icon: Globe,
-      label: 'Website',
-      value: 'www.yourportfolio.com',
-      href: 'https://www.yourportfolio.com',
+      value: 'Nigeria',
+    //   href: '#',
     },
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-600' },
-    { icon: Twitter, href: '#', label: 'Twitter', color: 'hover:text-blue-400' },
+    { icon: Github, href: 'https://github.com/Phemmy-Dev', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-gray-100' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/oluwafemi-akinruntan/', label: 'LinkedIn', color: 'hover:text-blue-600' },
+    { icon: Twitter, href: 'https://x.com/Phemmy_dev', label: 'Twitter', color: 'hover:text-blue-400' },
   ];
 
   const handleInputChange = (e) => {
@@ -170,8 +164,8 @@ const Contact = () => {
                 </h4>
                 <div className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
                   <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>9:00 AM - 6:00 PM (EST)</span>
+                    <span>Monday - Saturday</span>
+                    <span>9:00 AM - 5:00 PM (WAT)</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Response Time</span>
