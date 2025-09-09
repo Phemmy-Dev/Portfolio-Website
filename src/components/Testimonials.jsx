@@ -268,9 +268,11 @@ const Testimonials = () => {
               <p className="text-neutral-600 dark:text-neutral-400 mb-6">
                 Join these satisfied clients and let's create something amazing together.
               </p>
-              <button className="btn-primary">
+              <a href="https://wa.link/13msrt">
+                <button className="btn-primary">
                 Start Your Project
               </button>
+              </a>
             </div>
           </motion.div>
         </motion.div>

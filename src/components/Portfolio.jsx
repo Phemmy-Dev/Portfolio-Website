@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
+import kinaproject from '../assets/images/kinaproject.png';
+import cwproject from '../assets/images/cwproject.png';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const filters = ['all', 'react', 'vue', 'nextjs', 'fullstack'];
+  const filters = ['all', 'react', 'wordpress', 'shopify', 'fullstack'];
 
   const projects = [
     {
@@ -35,14 +37,14 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with location-based forecasts.',
+      title: 'TeaC',
+      description: 'The TeaC Brand is a clothing brand that sells tea-themed apparel and accessories.',
       longDescription: 'Elegant weather dashboard using Vue.js and OpenWeather API. Features include current weather conditions, 7-day forecasts, interactive maps, weather alerts, and beautiful data visualizations with Chart.js.',
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      tags: ['Vue.js', 'Chart.js', 'OpenWeather API', 'CSS3'],
-      category: 'vue',
-      liveUrl: '#',
-      githubUrl: '#',
+      tags: ['Shopify'],
+      category: 'shopify',
+      liveUrl: 'https://www.teac.store',
+      githubUrl: null,
       featured: false,
     },
     {
@@ -59,26 +61,26 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'Portfolio Website',
-      description: 'Modern portfolio website with smooth animations and dark mode.',
-      longDescription: 'This very portfolio website you\'re viewing! Built with React, Framer Motion, and Tailwind CSS. Features smooth animations, dark/light mode toggle, responsive design, and optimized performance.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      title: 'KINA Global Website',
+      description: 'A church website built with React and TailwindCSS.',
+      longDescription: 'This is a church website. Built with React, Framer Motion, and Tailwind CSS. Features smooth animations, responsive design, and optimized performance.',
+      image: kinaproject,
       tags: ['React', 'Framer Motion', 'Tailwind CSS', 'Vite'],
       category: 'react',
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://kinaglobal.org/',
+      githubUrl: null,
       featured: false,
     },
     {
       id: 6,
-      title: 'Learning Management System',
-      description: 'Educational platform with course management and progress tracking.',
-      longDescription: 'Full-featured LMS built with Next.js and Prisma. Includes course creation tools, video streaming, quizzes, progress tracking, certificates, payment integration, and student-teacher communication.',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      tags: ['Next.js', 'Prisma', 'PostgreSQL', 'Stripe'],
-      category: 'nextjs',
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'CW Music and Media',
+      description: 'Website built with wordpress for a Music and Media company with integrated booking system.',
+      longDescription: 'Website built with wordpress for a Music and Media company with integrated booking system.',
+      image: cwproject,
+      tags: ['Wordpress', 'Elementor', 'Booking System'],
+      category: 'wordpress',
+      liveUrl: 'https://cwmusicmedia.com/',
+      githubUrl: null,
       featured: false,
     },
   ];
@@ -323,6 +325,7 @@ const Portfolio = () => {
                 
                 <div className="flex space-x-4">
                   <a
+                    target='_blank'
                     href={selectedProject.liveUrl}
                     className="btn-primary space-x-2"
                   >
@@ -330,6 +333,7 @@ const Portfolio = () => {
                     <span>Live Demo</span>
                   </a>
                   <a
+                    target='_blank'
                     href={selectedProject.githubUrl}
                     className="btn-secondary space-x-2"
                   >
