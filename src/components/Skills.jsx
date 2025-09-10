@@ -224,7 +224,7 @@ const Skills = () => {
                             </motion.div>
                             
                             {/* Skill name */}
-                            <h3 className="font-semibold text-neutral-800 dark:text-black 
+                            <h3 className="font-semibold text-neutral-800 dark:text-neutral-200 
                                          group-hover:text-transparent group-hover:bg-clip-text 
                                          group-hover:bg-gradient-to-r group-hover:from-primary-600 
                                          group-hover:to-accent-600 transition-all duration-300">
@@ -301,8 +301,8 @@ const Skills = () => {
                     { name: 'Next.js', icon: Globe },
                     { name: 'TypeScript', icon: Code2 },
                     { name: 'Node.js', icon: Zap },
-                    { name: 'Three.js', icon: Smartphone },
-                    { name: 'GraphQL', icon: GitBranch }
+                    { name: 'Web3', icon: Smartphone },
+                    { name: 'AI Automation', icon: GitBranch }
                   ].map((tech, index) => (
                     <motion.div
                       key={tech.name}

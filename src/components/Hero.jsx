@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDown, Download, Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import heroImg from '../assets/images/heroimg.png';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -35,7 +36,7 @@ const Hero = () => {
           >
             <div className="w-full h-full rounded-full bg-gradient-to-br from-primary-500 to-accent-500 p-1">
               <div className="w-full h-full rounded-full bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-4xl lg:text-5xl font-bold text-primary-600">
-                👨‍💻
+                <img src={heroImg} alt="Hero Image" />
               </div>
             </div>
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 animate-pulse opacity-20" />
