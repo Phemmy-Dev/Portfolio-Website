@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import kinaproject from '../assets/images/kinaproject.png';
 import cwproject from '../assets/images/cwproject.png';
+import tltproject from '../assets/images/tltproject.png';
+import tltclassreporterproject from '../assets/images/tltclassreporter.png';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -25,18 +27,30 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates.',
-      longDescription: 'Modern task management solution built with Next.js, TypeScript, and Socket.io for real-time collaboration. Features drag-and-drop functionality, team collaboration, file attachments, notifications, and advanced project analytics.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      tags: ['Next.js', 'TypeScript', 'Socket.io', 'PostgreSQL'],
+      title: 'AI Class Reporter',
+      description: 'AI Class reporter for helping tutors generate detailed class reports using AI.',
+      longDescription: 'The AI Class reporter is a tool to help tutors generate detailed class reports using AI. It streamlines the reporting process, allowing educators to focus more on teaching and less on paperwork.',
+      image: tltclassreporterproject,
+      tags: ['React', 'TailwindCSS', 'Deepseek AI'],
       category: 'nextjs',
-      liveUrl: '#',
-      githubUrl: '#',
+      liveUrl: 'https://classreport.thelightutors.com/',
+      githubUrl: null,
       featured: true,
     },
     {
       id: 3,
+      title: 'The Light Tutors',
+      description: 'An online tutoring platform connecting students with qualified tutors.',
+      longDescription: 'The Light Tutors is an online tutoring platform that connects students with qualified tutors for personalized learning experiences. Built with React and TailwindCSS, a platform that features a user-friendly interface.',
+      image: tltproject,
+      tags: ['React', 'TailwindCSS', 'Framer Motion', 'Vite'],
+      category: 'react',
+      liveUrl: 'https://thelightutors.com/',
+      githubUrl: null,
+      featured: true,
+    },
+    {
+      id: 4,
       title: 'TeaC',
       description: 'The TeaC Brand is a clothing brand that sells tea-themed apparel and accessories.',
       longDescription: 'Elegant weather dashboard using Vue.js and OpenWeather API. Features include current weather conditions, 7-day forecasts, interactive maps, weather alerts, and beautiful data visualizations with Chart.js.',
@@ -46,18 +60,6 @@ const Portfolio = () => {
       liveUrl: 'https://www.teac.store',
       githubUrl: null,
       featured: false,
-    },
-    {
-      id: 4,
-      title: 'Social Media Dashboard',
-      description: 'Analytics dashboard for social media management with real-time insights.',
-      longDescription: 'Comprehensive social media management platform built with React and Node.js. Features include post scheduling, analytics tracking, engagement metrics, multi-platform integration, and automated reporting.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      tags: ['React', 'Node.js', 'MongoDB', 'D3.js'],
-      category: 'fullstack',
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: true,
     },
     {
       id: 5,

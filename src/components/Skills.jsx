@@ -224,7 +224,7 @@ const Skills = () => {
                             </motion.div>
                             
                             {/* Skill name */}
-                            <h3 className="font-semibold text-neutral-800 dark:text-neutral-200 
+                            <h3 className="font-semibold text-neutral-800 dark:text-black 
                                          group-hover:text-transparent group-hover:bg-clip-text 
                                          group-hover:bg-gradient-to-r group-hover:from-primary-600 
                                          group-hover:to-accent-600 transition-all duration-300">
